@@ -1,3 +1,34 @@
+# Project setup
+## Prerequisites
+### Windows
+1. Install Docker Desktop
+2. Install Windows Subsystem for Linux 2 and Ubuntu 22.04 distro.
+3. On the distro, run
+   ```
+   sudo apt update && sudo apt upgrade
+   ```
+4. Install [Composer](https://getcomposer.org) on the distro as well
+5. Install php 8.3
+## Packages
+In the project directory, run the following:
+```
+composer install
+npm i
+npm run build
+cp .env.example .env
+php artisan key:generate
+php artisan migrate
+```
+Run `docker compose up -d` in the project directory
+## Running
+For now, You have to run
+```
+npm run dev
+php artisan serve
+```
+On Your WSL 2 Distro/Linux machine in the project directory.
+# Laravel
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
