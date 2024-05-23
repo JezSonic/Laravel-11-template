@@ -35,7 +35,7 @@ services:
         environment:
             MYSQL_ROOT_PASSWORD: 'root'
             MYSQL_ROOT_HOST: '%'
-            MYSQL_DATABASE: 'backend'
+            MYSQL_DATABASE: 'laravel'
             MYSQL_USER: 'sail'
             MYSQL_PASSWORD: 'password'
             MYSQL_ALLOW_EMPTY_PASSWORD: 1

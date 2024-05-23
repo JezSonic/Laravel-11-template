@@ -1,3 +1,8 @@
+# About project
+This is starter Laravel 11 project that includes packages like:
+- Horizon
+- Sessions
+- Breeze (Vue, SSR disabled by default)
 # Project setup
 ## Prerequisites
 ### Windows
@@ -9,17 +14,17 @@
    ```
 4. Install [Composer](https://getcomposer.org) on the distro as well
 5. Install php 8.3
-## Packages
+## Packages, Docker and migrations
 In the project directory, run the following:
 ```
+cp .env.example .env
 composer install
 npm i
 npm run build
-cp .env.example .env
 php artisan key:generate
+docker compose up -d
 php artisan migrate
 ```
-Run `docker compose up -d` in the project directory
 ## Running
 For now, You have to run
 ```

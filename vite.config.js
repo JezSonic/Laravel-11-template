@@ -6,7 +6,6 @@ export default defineConfig({
     plugins: [
         laravel({
             input: 'resources/js/app.ts',
-            ssr: 'resources/js/ssr.ts',
             refresh: true,
         }),
         vue({
@@ -18,4 +17,9 @@ export default defineConfig({
             },
         }),
     ],
+    server: {
+        watch: {
+            usePolling: true,
+        },
+    }
 });
